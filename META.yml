@@ -1,0 +1,26 @@
+---
+name: POE-Component-IRC-Plugin-Google-PageRank
+version: 0.01
+author:
+  - 'Zoffix Znet <zoffix@cpan.org>'
+abstract: |-
+  non-blocking access
+  to Google's PageRank via IRC
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+requires:
+  Carp: 1.04
+  POE: 0.9999
+  POE::Component::IRC::Plugin: 0.09
+  POE::Component::WWW::Google::PageRank: 0.01
+build_requires:
+  Test::More: 0
+provides:
+  POE::Component::IRC::Plugin::Google::PageRank:
+    file: lib/POE/Component/IRC/Plugin/Google/PageRank.pm
+    version: 0.01
+generated_by: Module::Build version 0.2808
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
