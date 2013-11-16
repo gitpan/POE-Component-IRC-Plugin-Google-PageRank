@@ -1,5 +1,7 @@
 POE-Component-IRC-Plugin-Google-PageRank
 
+Non-blocking access to Google's PageRank via IRC
+
 INSTALLATION
 
 To install this module, run the following commands:

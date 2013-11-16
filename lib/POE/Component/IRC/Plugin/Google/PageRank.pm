@@ -7,7 +7,7 @@ use Carp;
 use POE qw(Component::WWW::Google::PageRank);
 use POE::Component::IRC::Plugin qw(:ALL);
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub new {
     my $package = shift;
@@ -179,7 +179,7 @@ sub _rank_done {
         $response_message = "Rank is $in_ref->{rank}";
     }
                          
-    $self->{irc}->_send_event( $self->{response_event} => {
+    $self->{irc}->send_event( $self->{response_event} => {
             result => $response_message,
             page   => $in_ref->{page},
             map { $_ => $in_ref->{"_$_"} }
@@ -209,6 +209,8 @@ sub _rank_done {
 1;
 
 __END__
+
+=encoding utf8
 
 =head1 NAME
 

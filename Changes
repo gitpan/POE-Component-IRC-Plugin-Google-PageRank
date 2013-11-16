@@ -1,5 +1,9 @@
 Revision history for POE-Component-IRC-Plugin-Google-PageRank
 
-0.01    Tue Feb 12 10:50:00 2008
-        First version, released on an unsuspecting world.
+0.02    2013-11-15
+        - Fixed a fatal bug that resulted from a PoCo::IRC update
+        - Minor fixes to comply with specs and Kwalitee game
+
+0.01    2008-02-12
+        - First version, released on an unsuspecting world.
 

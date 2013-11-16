@@ -15,7 +15,9 @@ my $builder = Module::Build->new(
         'POE'                                     => 0.9999,
         'POE::Component::WWW::Google::PageRank'   => 0.01,
         'POE::Component::IRC::Plugin'             => 0.09,
+        'perl' => '5.006',
     },
+    configure_requires => { 'Module::Build' => 0 },
     add_to_cleanup      => [ 'POE-Component-IRC-Plugin-Google-PageRank-*' ],
     create_makefile_pl => 'traditional',
 );
